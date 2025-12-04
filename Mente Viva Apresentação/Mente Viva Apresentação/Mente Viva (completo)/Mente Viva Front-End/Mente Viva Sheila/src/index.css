@@ -1,0 +1,150 @@
+/* Reset leve + tema */
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #0a3342;
+  background: #f6f8f9;
+  line-height: 1.6;
+}
+
+/* Layout geral */
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 32px 20px 64px;
+}
+
+/* Tipografia */
+h1 { font-size: 44px; line-height: 1.2; margin: 8px 0 12px; color: #0c3b57; }
+h2 { font-size: 28px; line-height: 1.3; margin: 28px 0 12px; color: #0c3b57; }
+h3 { font-size: 20px; margin: 10px 0 6px; color: #0c3b57; }
+.lead { font-size: 18px; color: #2d5563; }
+
+/* Seções */
+.section {
+  background: #ffffff;
+  border: 1px solid #e5eef2;
+  border-radius: 16px;
+  padding: 24px;
+  margin: 18px 0;
+  box-shadow: 0 6px 20px rgba(10, 51, 66, 0.05);
+}
+
+/* Hero */
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 20px;
+  align-items: center;
+}
+.hero-img {
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+/* Listas */
+ul { padding-left: 20px; }
+li { margin: 6px 0; }
+.bullets { font-size: 17px; }
+
+/* Pills */
+.pill-list { list-style: none; padding: 0; display: flex; gap: 8px; margin: 14px 0 0; }
+.pill-list li {
+  background: #e9f4fa;
+  color: #0a3a57;
+  border: 1px solid #d4e8f2;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 14px;
+}
+
+/* Cards de features */
+.features { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+.card {
+  background: #fff;
+  border: 1px solid #e8eef1;
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.04);
+}
+.card .icon { height: 56px; display: flex; align-items: center; }
+.card .icon img { height: 40px; width: 40px; object-fit: contain; }
+
+/* Rodapé */
+.footer {
+  margin-top: 26px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  color: #466574;
+  font-size: 14px;
+}
+.footer img { height: 28px; width: auto; }
+
+/* Responsivo */
+@media (max-width: 860px) {
+  .hero-grid { grid-template-columns: 1fr; }
+}
+
+/* ---- Modern UI (injetado) ---- */
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body { margin:0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color:#0a3342; background:#f6f8f9; line-height:1.6; }
+.container { max-width:1080px; margin:0 auto; padding:32px 20px 64px; }
+h1 { font-size:44px; line-height:1.2; margin:8px 0 12px; color:#0c3b57; }
+h2 { font-size:28px; line-height:1.3; margin:28px 0 12px; color:#0c3b57; }
+h3 { font-size:20px; margin:10px 0 6px; color:#0c3b57; }
+.lead { font-size:18px; color:#2d5563; }
+
+.section { background:#fff; border:1px solid #e5eef2; border-radius:16px; padding:24px; margin:18px 0; box-shadow:0 6px 20px rgba(10,51,66,0.05); }
+
+.nav { position:sticky; top:0; z-index:50; background:#ffffffcc; backdrop-filter: blur(8px); border-bottom:1px solid #e8eef1; }
+.nav-inner { max-width:1080px; margin:0 auto; padding:10px 16px; display:flex; align-items:center; gap:16px; justify-content:space-between; }
+.brand { display:flex; align-items:center; gap:8px; font-weight:600; color:#0c3b57; }
+.brand img { height:28px; width:auto; }
+.links { display:flex; gap:8px; flex-wrap:wrap; }
+.nav-link { color:#2d5563; text-decoration:none; font-size:14px; padding:6px 10px; border-radius:8px; }
+.nav-link:hover { background:#f0f6fa; }
+.nav-active { background:#0c3b57; color:#fff; text-decoration:none; padding:6px 10px; border-radius:8px; }
+
+.pill-list { list-style:none; padding:0; display:flex; gap:8px; margin:14px 0 0; }
+.pill-list li { background:#e9f4fa; color:#0a3a57; border:1px solid #d4e8f2; padding:6px 10px; border-radius:999px; font-size:14px; }
+
+.features { display:grid; grid-template-columns:repeat(auto-fit, minmax(240px,1fr)); gap:16px; }
+.card { background:#fff; border:1px solid #e8eef1; border-radius:14px; padding:16px; box-shadow:0 4px 14px rgba(0,0,0,0.04); }
+.card .icon { height:56px; display:flex; align-items:center; }
+.card .icon img { height:40px; width:40px; object-fit:contain; }
+
+.hero-grid { display:grid; grid-template-columns: minmax(280px,1fr) minmax(280px,1fr); gap:32px; align-items:center; }
+.hero-media { display:flex; justify-content:center; }
+.hero-media img { width:100%; max-width:520px; height:auto; border-radius:16px; object-fit:cover; box-shadow:0 8px 24px rgba(0,0,0,0.08); }
+@media (max-width:900px) { .hero-grid { grid-template-columns:1fr; } .hero-media img { max-width:100%; } }
+
+.input { width:100%; padding:10px 12px; margin:6px 0 12px; border:1px solid #dbe4ea; border-radius:10px; }
+.btn { background:#0c3b57; color:#fff; border:0; border-radius:10px; padding:10px 14px; cursor:pointer; }
+.btn:hover { filter: brightness(1.05); }
+
+/* ---- FORMS & CARDS ---- */
+.input { width:100%; padding:12px 14px; border:1px solid #dbe4ea; border-radius:12px; background:#fff; outline:none; }
+.input:focus { border-color:#93bfd6; box-shadow:0 0 0 4px rgba(12,59,87,.07); }
+.label { display:block; font-size:14px; color:#365a68; margin:10px 0 6px; }
+.btn { background:#0c3b57; color:#fff; border:0; border-radius:12px; padding:11px 16px; cursor:pointer; font-weight:600; }
+.btn:hover { filter:brightness(1.06); }
+.btn-ghost { background:#eef6fb; color:#0c3b57; border:1px solid #d3e6f1; }
+.btn-row { display:flex; gap:10px; flex-wrap:wrap; }
+
+.card { background:#fff; border:1px solid #e8eef1; border-radius:16px; padding:20px; box-shadow:0 8px 24px rgba(0,0,0,.05); }
+.card-lg { padding:28px; border-radius:18px; }
+
+.grid-2 { display:grid; grid-template-columns: 1fr 1fr; gap:18px; }
+@media (max-width: 900px){ .grid-2{ grid-template-columns:1fr; } }
+
+.kbd { display:inline-block; background:#0c3b5710; color:#0c3b57; border:1px solid #cfe0ea; padding:6px 10px; border-radius:999px; font-weight:600; }
+.stat { background:#f5fbff; border:1px solid #d9ebf5; border-radius:12px; padding:12px 14px; display:flex; align-items:center; gap:10px; }
+.stat b{ font-size:22px; color:#0c3b57; }
+
+textarea.input { min-height: 120px; line-height: 1.5; }
