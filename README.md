@@ -42,11 +42,15 @@ Antes de iniciar, certifique-se de ter instalado:
 
 ---
 
+## Observação
+### Antes de rodar o Backend, necessta-se do .env
+
 ## 4. Execução do Projeto
 ### 4.1. Passo a psso para fazer no terminal do Backend
-Primeiro passo: abrir teminal
-Seguno passo: executar no terminal: cd '.\Mente viva (completo)\Mente Viva Back-End'
-Terceiro passo: npm start
+Primeiro passo: criar um .env, para conexão com o banco de dados
+Segundo passo: abrir teminal
+Terceiro passo: executar no terminal: cd '.\Mente viva (completo)\Mente Viva Back-End'
+Quarto passo: npm start
 
 Depois deexecutar esses passos, deve aparecer duas mensagens "API rodando na porta 3000" e "MongoDB conectado"
 
